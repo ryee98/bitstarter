@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var infile = "index.html";
 var buf = new Buffer(1024);
-//fs.readFileSync(infile, buf);  
+fs.readFileSync(infile, buf);  
 //console.log("Script: " + __filename + "\nRead: " + buf);
 var app = express.createServer(express.logger());
 
