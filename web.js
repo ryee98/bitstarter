@@ -7,7 +7,7 @@ console.log("Script: " + __filename + "\nRead: " + buf);
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(buf.toString());
+  response.send("Hi richard");
 });
 
 var port = process.env.PORT || 5000;
